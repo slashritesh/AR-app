@@ -12,7 +12,11 @@ const XRCube = () => {
     <>
       <OrbitControls />
       <ambientLight />
-      <mesh ref={cuberef}>
+      <mesh ref={cuberef} position-z={-8}>
+        <boxGeometry args={[2,3,2]} />
+        <meshStandardMaterial color={"red"} />
+      </mesh>
+      <mesh ref={cuberef} position-z={-9} position-y={7}>
         <boxGeometry args={[2,3,2]} />
         <meshStandardMaterial color={"red"} />
       </mesh>
