@@ -4,6 +4,7 @@ import React from 'react'
 import { ARButton, XR } from '@react-three/xr'
 import { Model } from './DragonModel'
 import { OrbitControls } from '@react-three/drei'
+import XRCube from './XRCube'
 
 
 
@@ -15,8 +16,9 @@ const XRCubeContainer = () => {
     <Canvas>
       <XR>
       <OrbitControls />
-      <ambientLight /> 
+      <ambientLight  intensity={0.5}/> 
         <Model position-x={0} position-z={-3} position-y={0} />
+        <XRCube />
       </XR>
     </Canvas>
     </div>
