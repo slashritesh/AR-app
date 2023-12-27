@@ -6,7 +6,7 @@ const Homepage = () => {
     <div className='home-wrap'>
         <h1>Augumented reality</h1>
         <Link to={'/xrcube'}>
-        <button className='btn'>Enter In AR World</button>
+        <button className='btn'>Enter In AR</button>
         </Link>
     </div>
   )

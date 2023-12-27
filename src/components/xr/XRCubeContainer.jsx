@@ -1,8 +1,12 @@
 
 import { Canvas } from '@react-three/fiber'
 import React from 'react'
-import XRCube from './XRCube'
 import { ARButton, XR } from '@react-three/xr'
+import { Model } from './DragonModel'
+import { OrbitControls } from '@react-three/drei'
+
+
+
 
 const XRCubeContainer = () => {
   return (
@@ -10,7 +14,9 @@ const XRCubeContainer = () => {
       <ARButton />
     <Canvas>
       <XR>
-        <XRCube />
+      <OrbitControls />
+      <ambientLight /> 
+        <Model position-x={0} position-z={-3} position-y={0} />
       </XR>
     </Canvas>
     </div>
